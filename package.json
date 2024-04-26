@@ -1,18 +1,35 @@
 {
   "private": "true",
-  "name": "joker-ui",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "node scripts/dev",
-    "build": "node scripts/build"
+    "dev": "vite -c config/vite.config.ts",
+    "build": "npm run build-ui && npm run build-homepage",
+    "build-ui": "vite build -c config/vite.config.ts --mode ui",
+    "build-homepage": "vite build -c config/vite.config.ts --mode homepage"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "engines": {
-    "node": ">=16",
-    "pnpm": ">=7"
+    "node": ">=18.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "eslint": "^9.1.1",
+    "eslint-plugin-react-hooks": "^4.6.1",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
   }
 }
