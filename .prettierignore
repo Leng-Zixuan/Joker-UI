@@ -1,0 +1,7 @@
+dist
+*.md
+*.html
+pnpm-lock.yaml
+build
+node_modules
+public

@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import { fileURLToPath } from "node:url";
 import { resolve } from "node:path";
 
-const __dirname = fileURLToPath(new URL("../", import.meta.url));
+const __dirname = fileURLToPath(new URL("./", import.meta.url));
 
 export default defineConfig((config) => {
   const { command, mode } = config;

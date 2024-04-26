@@ -4,10 +4,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "vite -c config/vite.config.ts",
-    "build": "npm run build-ui && npm run build-homepage",
-    "build-ui": "vite build -c config/vite.config.ts --mode ui",
-    "build-homepage": "vite build -c config/vite.config.ts --mode homepage"
+    "dev": "vite",
+    "build": "tsc && npm run build-ui && npm run build-homepage",
+    "build-ui": "vite build --mode ui",
+    "build-homepage": "vite build --mode homepage",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +27,7 @@
     "eslint": "^9.1.1",
     "eslint-plugin-react-hooks": "^4.6.1",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "prettier": "^3.2.5",
     "typescript": "^5.4.5",
     "vite": "^5.2.10"
   },

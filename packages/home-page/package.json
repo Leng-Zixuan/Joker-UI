@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite -c ../../config/vite.config.ts"
+    "dev": "vite",
+    "build": "tsc && vite build"
   },
   "keywords": [],
   "author": "",
