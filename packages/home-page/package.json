@@ -1,13 +1,13 @@
 {
-  "name": "home-page",
+  "name": "@joker/home-page",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Joker ui home page",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

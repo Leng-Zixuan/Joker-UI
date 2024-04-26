@@ -1,0 +1,10 @@
+{
+  "name": "@joker/ui",
+  "version": "0.0.1",
+  "description": "Joker UI components",
+  "main": "dist/index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
